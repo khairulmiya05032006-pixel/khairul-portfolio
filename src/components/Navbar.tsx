@@ -80,7 +80,9 @@ export default function Navbar() {
     const isDark = stored ? stored === "dark" : prefersDark;
 
     applyTheme(isDark);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDarkMode(isDark);
+     
     setMounted(true);
 
     // React to OS-level theme changes (only when user hasn't manually set a preference)
