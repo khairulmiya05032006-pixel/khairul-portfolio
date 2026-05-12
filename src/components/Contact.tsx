@@ -291,8 +291,10 @@ export default function Contact() {
                   type="text"
                   name="_honey"
                   tabIndex={-1}
-                  autoComplete="off"
+                  autoComplete="new-password"
                   aria-hidden="true"
+                  defaultValue=""
+                  onChange={(e) => { e.target.value = ""; }}
                   style={{ position: "absolute", left: "-9999px", opacity: 0, pointerEvents: "none" }}
                 />
 

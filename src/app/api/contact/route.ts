@@ -26,7 +26,7 @@ const contactSchema = z.object({
     .max(2000, "Message must be under 2000 characters"),
 
   // Honeypot field — must be empty (bots fill it, humans don't see it)
-  _honey: z.string().max(0, "Bot detected"),
+  _honey: z.string().max(0, "Automated submission detected. If you are a real user, please use the direct email link instead."),
 });
 
 // ─── Simple in-memory rate limiter ────────────────────────────────────────────
